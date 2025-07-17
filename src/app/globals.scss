@@ -1,0 +1,32 @@
+@use './variables' as *;
+
+/* Font */
+@font-face {
+  font-family: 'Nunito';
+  src: url('/fonts/Nunito.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Theme */
+body {
+  font-family: $font-family;
+}
+li {
+  list-style: disc;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a.highlight {
+  color: $indigo;
+}
+
+/* Icons */
+.icon {
+  filter: invert(50%);
+}
+.icon:hover {
+  filter: unset;
+}
